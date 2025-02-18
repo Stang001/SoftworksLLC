@@ -1,0 +1,130 @@
+|
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Store | Nakrob Keawphetwong</title>
+        <link rel="shortcut icon" href="../../../assets/img/cat-meme.gif" type="image/png">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <link href="../../../assets/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../../../assets/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../assets/css/dataTables.bootstrap4.min.css">
+        <link href="../../../assets/css/animate.css" rel="stylesheet">
+        <script src="../../../assets/js/sweetalert.min.js"></script>
+        <link href="../../../assets/css/hyper.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <script type="text/javascript" src="../../../assets/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <style>
+            .swal-modal .swal-text {
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    
+    <body class="bodyss" style="background-color: #191A1C;">
+        <div class="container" style="padding-top: 110px;">
+            
+            <!-- Game Data -->
+            <div class="table-responsive mt-3 card mt-4 shadow-dark radius-border hyper-bg-white card-body">
+                <h3 class="text-center mt-4 mb-4">--- ข้อมูลทั้งหมดใน ROBLOX ---</h3>
+                <center><button class="btn hyper-btn-info my-2 my-sm-0 w-100" type="button" data-toggle="modal" data-target="#addgamemodal"><i class="fal fa-plus-square mr-1"></i> เพิ่มข้อมูลใหม่เข้าระบบ</button></center>
+                
+                <!-- Add Game Data Modal -->
+                <div class="modal fade" id="addgamemodal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 radius-border-2 hyper-bg-white">
+                            <div class="modal-header hyper-bg-dark">
+                                <h6 class="modal-title"><i class="fal fa-plus-square mr-1"></i> เพิ่มข้อมูลใหม่เข้าระบบ</h6>
+                            </div>
+                            <div class="modal-body text-center">
+                                
+                                <form id="addDatanew" method="POST" enctype="multipart/form-data">
+                                    
+                                    <div class="input-group input-group-sm mb-3 mt-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text hyper-bg-dark border-dark">ชื่อผู้ใช้งาน</span>
+                                        </div>
+                                        <input id="usernamenew" name="usernamenew" type="text" class="form-control form-control-sm hyper-form-control" placeholder="ชื่อผู้ใช้งาน" required="" autocomplete="off">
+                                    </div>
+                                    
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text hyper-bg-dark border-dark">รหัสผ่าน</span>
+                                        </div>
+                                        <input id="passwordnew" name="passwordnew" type="password" class="form-control form-control-sm hyper-form-control" placeholder="รหัสผ่าน" required="" autocomplete="off">
+                                    </div>
+                                    
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text hyper-bg-dark border-dark" for="inputGroupSelect01">ลิ้งรูป</label>
+                                        </div>
+                                        <input id="imageurlnew" name="passwordnew" type="text" class="form-control form-control-sm hyper-form-control" placeholder="Url" required="" autocomplete="off">
+                                    </div>
+                                    
+                                    <div class="input-group input-group-sm">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text hyper-bg-dark border-dark">รายละเอียด</span>
+                                        </div>
+                                        <textarea id="detailnew" name="detailnew" class="form-control form-control-sm hyper-form-control" style="height: 100px;min-height: 100px;max-height: 100px;"></textarea>
+                                    </div>
+                                    
+                                    <input type="hidden" id="gameidnew" name="gameidnew" value="14">
+                                    
+                                    <button type="submit" id="submitdatanew" class="d-none"></button>
+                                </form>
+                                
+                            </div>
+                            <div class="modal-footer p-2 border-0">
+                                <button type="button" onclick="submitdata('new')" class="btn hyper-btn-notoutline-success"><i class="fal fa-plus-square mr-1"></i>เพิ่มข้อมูล</button>
+                                <button type="button" class="btn hyper-btn-notoutline-danger" data-dismiss="modal"><i class="fad fa-times-circle mr-1"></i>ยกเลิก</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Add Game Data Modal -->
+                
+                <div class="table-responsive mt-3">
+                    <div id="datatable_wrapper" class="dataTables_wrapper no-footer">
+                        <div class="dataTables_length dataTables_d_none" id="datatable_length"><label>Show <select name="datatable_length" aria-controls="datatable" class="">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select> entries</label></div>
+                        <div id="datatable_filter" class="dataTables_filter"><label>ค้นหา :<input id="GameDataSearch" type="search" oninput="filterGameData()" class="hyper-form-control hyper-form-control-sm mt-2" ""="" placeholder="" aria-controls="datatable"></label></div>
+                        <table id="datatable" class="table text-center w-100 dataTable no-footer" role="grid" aria-describedby="datatable_info">
+                            <thead class="hyper-bg-dark">
+                                <tr role="row">
+                                    <th scope="col" style="width:120px;" class="sorting_asc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="เลขที่ข้อมูล: activate to sort column descending">เลขที่ข้อมูล</th>
+                                    <th scope="col" class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-label="บัญชีผู้ใช้: activate to sort column ascending" style="width: 290.422px;">บัญชีผู้ใช้</th>
+                                    <th scope="col" class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-label="ที่อยู่การ์ด: activate to sort column ascending" style="width: 295.578px;">ที่อยู่การ์ด</th>
+                                    <th scope="col" style="width: 170px;" class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-label="เมนู: activate to sort column ascending">เมนู</th>
+                                </tr>
+                            </thead>
+                            <tbody id="GameDataList">
+
+                            </tbody>
+                        </table>
+                        <div class="dataTables_info" id="datatable_info" role="status" aria-live="polite">แสดงข้อมูล 1 ถึง 1 จากทั้งหมด 1 ข้อมูล</div>
+                        <div class="dataTables_paginate paging_simple_numbers" id="datatable_paginate"><a class="paginate_button Previous disabled" aria-controls="datatable" data-dt-idx="0" tabindex="0" id="datatable_Previous">ก่อนหน้า</a><span><a class="paginate_button current" aria-controls="datatable" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="datatable" data-dt-idx="2" tabindex="0" id="datatable_next">หน้าต่อไป</a></div>
+                    </div>
+                </div>
+                
+                <!-- Footer -->
+                <small class="pb-3 d-block my-auto footer-copyright text-secondary text-center py-4 w-100">© Copyright 2021 Website By <a href="https://www.facebook.com/DARK-SHOP-101002951490510" target="_blank">DARK SHOP</a> All Rights Reserved.</small>
+                <!-- End Footer -->
+            </div>
+            <!-- Container End -->
+        </div>
+        <script src="../../../assets/Scripts/FunctionsHandler.js"></script>
+        <script src="../../../assets/plugins/GameDataUnit.js"></script>
+    </body>
+</html>

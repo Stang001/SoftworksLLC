@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softworks LLC. | Home</title>
+    <link rel="shortcut icon" href="../../assets/img/Icon.svg" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/Icon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/Icon.svg">
+    <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <link href="https://kit-pro.fontawesome.com/releases/v6.7.2/css/pro.min.css" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@1.0.4/dist/simple-notify.css" />
+    <script src="https://cdn.jsdelivr.net/npm/simple-notify@1.0.4/dist/simple-notify.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/animejs@3.2.2/lib/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Mitr:wght@200;300;400;500;600;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap" rel="stylesheet">
+
+    <script src='./Scripts/tinysort.js'></script>
+    <script src="../../assets/js/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    <link href="../../assets/Styles/bootstrap.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css'>
+
+    <script src='https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js'></script>
+    <script src='https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js'></script>
+    <script src='https://cdn.datatables.net/1.13.8/js/dataTables.bootstrap5.min.js'></script>
+
+    <link rel="stylesheet" href="../../assets/Styles/Main.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.3/dist/bootstrap-table.min.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+    <style>
+        :root {
+            --color-main: #38b3ff;
+            --color-main-opa-75: #38b3ff75;
+            --color-main-opa-50: #38b3ff50;
+            --color-main-opa-25: #38b3ff25;
+            --color-main-opa-15: #38b3ff15;
+
+            --color-button: #38b3ff;
+            --color-button-opa-75: #38b3ff75;
+            --color-button-opa-50: #38b3ff50;
+            --color-button-opa-25: #38b3ff25;
+            --color-button-opa-15: #38b3ff15;
+
+            --color-text: #38b3ff;
+            --color-text-opa-85: #38b3ff85;
+            --color-text-opa-75: #38b3ff75;
+            --color-text-opa-50: #38b3ff50;
+            --color-text-opa-25: #38b3ff25;
+            --color-text-opa-15: #38b3ff15;
+
+            --color-border: #dee2e6;
+            --color-bg-theme: #fff;
+            --color-text-theme: #6c757d;
+            --color-text-theme-opa-25: #6c757d20;
+            --color-text-theme-opa-50: #6c757d50;
+            --color-text-theme-opa-75: #6c757d75;
+            --color-text-theme-opa-85: #6c757d85;
+        }
+
+        .border {
+            border: 1px solid var(--color-border) !important;
+        }
+
+        *:not(i) {
+            font-family: 'Kanit', sans-serif;
+            font-weight: normal !important;
+        }
+
+        body {
+            background-color: rgb(236, 236, 236);
+            /*background-image: url('./Images/god.png');*/
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        .widget-icon {
+            color: var(--color-main);
+            font-size: 24px;
+            background-color: #38b3ff20;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 3px;
+            display: inline-block
+        }
+
+        .text-theme,
+        .text-theme i {
+            color: #6c757d !important;
+        }
+
+        .image-size-tag {
+            /* &nbsp;<span class="image-size-tag">1,500 x 1,500</span> */
+            position: relative;
+            width: max-content;
+            height: fit-content;
+            top: -3px;
+            padding-left: 1vh;
+            padding-right: 1vh;
+            padding-top: 0.3vh;
+            padding-bottom: 0.3vh;
+            border-radius: 90vh;
+            font-size: 11px;
+            line-height: 0.5vh;
+            font-weight: 500 !important;
+            background-color: var(--color-main-opa-25);
+            color: var(--color-main);
+            border: 1.5px solid var(--color-main);
+        }
+
+        .nav-search {
+            background-color: transparent;
+            display: block;
+            text-decoration: none;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+        }
+
+        .input-blur {
+            filter: blur(3px);
+            -webkit-filter: blur(3px);
+        }
+
+        .input-blur:hover,
+        .input-blur:active,
+        .input-blur:focus {
+            filter: blur(0px);
+            -webkit-filter: blur(0px);
+        }
+
+        table:not(.not-td-hover) tbody tr:nth-of-type(odd) {
+            background-color: rgba(56, 179, 255, 0.02) !important;
+        }
+
+        table:not(.not-td-hover) tr:hover td {
+            background-color: rgba(56, 179, 255, 0.05) !important;
+        }
+    </style>
+</head>
+
+
+<body onload='let scroll = window.scrollY; let scrollString = scroll.toString(); localStorage.setItem("scrollPosition_Body", scrollString);'>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=#"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', '#');
+    </script>
+
+    <link rel="stylesheet" href="../../assets/Styles/catloader.css">
+
+    <div class="loader">
+        <img class="icon" src="../../assets/img/loader/cat_v2.gif">
+    </div>
+
+    <script>
+        window.addEventListener("load", (event) => {
+            setTimeout(() => {
+                $(".loader").addClass("load-hidden")
+            }, 250);
+        });
+
+        document.addEventListener("readystatechange", (event) => {
+            setTimeout(() => {
+                $(".loader").addClass("load-hidden")
+            }, 250);
+        });
+
+        document.addEventListener("DOMContentLoaded", (event) => {
+            setTimeout(() => {
+                $(".1oader").addClass("load-hidden")
+            }, 250);
+        });
+    </script>
+
+    </script>
+    <nav class="navbar navbar-expand-xl sticky-top mb-0" id="nav_main">
+        <div class="bg-light container-lg border" style="border-radius: 15px;">
+            <button class="btn btn-transparent text-main d-block d-lg-block d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-duotone fa-solid fa-bars" style="font-size: 25px;"></i>
+            </button>
+            <a class="navbar-brand d-none d-lg-none d-xl-block" href="./index.html"><img src="../../assets/img/Icon.svg" height="55px" width="auto"></a>
+            <a class="navbar-brand pt-2 pb-2" style="height: 65px;"></a>
+            <div class="offcanvas offcanvas-start " style="max-width: 90%; box-shadow: 0 0 0 0 transparent !important;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto align-items-center mb-2 mb-lg-0">
+                        <!----------------- Mobile ----------------->
+                        <li class="nav-item d-block d-lg-block d-xl-none mb-3">
+                            <a href="./index.html"><img src="../../assets/img/Icon.svg" height="55px" width="auto"></a>
+                        </li>
+                        <li class="nav-item d-block d-lg-block d-xl-none">
+                            <div class="row justify-content-center">
+                                <div class="d-flex mb-0 px-5">
+                                    <hr class="my-auto mb-0 flex-grow-1">
+                                    <h5 class="text-theme px-4 mt-0 mb-0">เมนู</h5>
+                                    <hr class="my-auto mb-0 flex-grow-1">
+                                </div>
+                                <a class="text-theme my-2" href="./index.html"><i class="fa-duotone fa-solid fa-house"></i>&nbsp;&nbsp;หน้าหลัก</a>
+                                <a class="text-theme my-2" href="./Category.html"><i class="fa-duotone fa-solid fa-store"></i>&nbsp;&nbsp;สินค้าทั่วไป</a>
+
+                                <a class="text-theme my-2" href="#"><i class="fa-duotone fa-solid fa-wallet"></i>&nbsp;&nbsp;เติมเงิน</a>
+
+
+                            </div>
+                        </li>
+                        <!----------------- PC ----------------->
+
+                        <a class="d-none d-lg-none d-xl-block ms-lg-3 nav-v1" href="./index.html">
+                            <i class="fa-duotone fa-solid fa-house"></i>&nbsp;หน้าหลัก </a>
+                        <a class="d-none d-lg-none d-xl-block ms-lg-3 nav-v1 nav-v1-active" href="./Category.html">
+                            <i class="fa-duotone fa-solid fa-store"></i>&nbsp;สินค้าทั่วไป </a>
+
+
+
+                        <a class="d-none d-lg-none d-xl-block ms-lg-3 nav-v1 " href="#">
+                            <i class="fa-duotone fa-solid fa-wallet"></i>&nbsp;เติมเงิน </a>
+
+                    </ul>
+                </div>
+            </div>
+            <li class="nav-item ms-0 ms-lg-0 ms-xl-3 me-0 me-lg-0 me-xl-3 p-0" style="list-style: none;"></li>
+            <li class="nav-item dropdown ms-0" style="list-style: none;">
+                <a class="nav-link p-0" style="border-radius: 1vh;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <img class="profile-picture rounded-circle border-main m-0 p-0" style="max-width: 30px; max-height: 30px;" src="../../assets/img/Honjou Nia Icons.jpeg">
+                </a>
+                <ul class="dropdown-menu bg-light border p-0" style="border-radius: 1vh;" aria-labelledby="navbarDropdown">
+                    <div class="d-flex justify-content-center align-items-center mt-1 p-0">
+                        <img class="profile-picture border-main rounded-circle m-2 p-0" style="max-width: 30px; max-height: 30px;" src="../../assets/img/Honjou Nia Icons.jpeg">
+                        <div class="row justify-content-center m-0 py-0 px-2">
+                            <p id="Usernameshow" class="col-12 text-theme text-left m-0 p-0">nil</p>
+                            <small id="Emailshow" class="col-12 text-theme text-left m-0 p-0">nil</small>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider my-1"></div>
+                    <li>
+                        <a id="Pointshow" class="dropdown-item text-theme pt-2 pb-0 ps-2" href="./Profile.html">
+                            <i class="fa-duotone fa-solid fa-wallet"></i>&nbsp;&nbsp;คงเหลือ : n/a฿
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item text-theme pt-2 pb-0 ps-2" href="./Profile.html">
+                            <i class="fa-duotone fa-solid fa-circle-user"></i>&nbsp;&nbsp;โปรไฟล์
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item text-theme pt-2 pb-0 ps-2">
+                            <i class="fa-duotone fa-solid fa-clock-rotate-left"></i>&nbsp;&nbsp;ประวัติต่างๆ
+                        </a>
+                    </li>
+                    <div class="dropdown-divider my-1"></div>
+                    <li>
+                        <a class="dropdown-item text-theme pt-2 pb-1 ps-2" id="logoutButton">
+                            <i class="fa-duotone fa-solid fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;ออกจากระบบ
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+    </nav>
+
+    <style>
+        .discount {
+            margin-left: 15px;
+            font-size: 15px;
+            color: #fff;
+            text-transform: uppercase;
+            background: var(--color-button);
+            border-radius: 5px;
+            padding: 5px;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .input-number-input {
+            position: relative;
+            box-shadow: none;
+            outline: none;
+            border: none;
+            overflow: hidden;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            z-index: 2;
+            font-size: 20px;
+            line-height: 40px;
+            color: var(--color-button);
+            border: 1px solid var(--color-button);
+            border-radius: 10px;
+        }
+
+        .input-number-button {
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            width: 60px;
+            height: 100%;
+            color: #fff;
+            font-size: 25px;
+            background-color: var(--color-button);
+            -webkit-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+            color: var(--color-button);
+            border-radius: 10px;
+            border: 1px solid var(--color-button);
+            background-color: var(--color-button-opa-15);
+        }
+
+        .input-number-button:hover {
+            background-color: var(--color-button-opa-50);
+        }
+    </style>
+
+
+    <div class="container" style="margin-bottom: 10%;">
+        <div class="bg-light border shadow my-4 pt-2 pb-3 px-4" style="border-radius: 10px;">
+            <div class="d-flex justify-content-between mb-2 mt-4">
+                <div class="align-items-center justify-content-start breadcrumb-custom">
+                    <a href="./index.html" class="m-0 h6 text-theme text-nowrap"><i class="fa-duotone fa-solid fa-house"></i>&nbsp;&nbsp;หน้าหลัก&nbsp;<i class="fa-duotone fa-solid fa-angle-right" style="font-size: small;"></i>&nbsp;</a>
+                    <a href="./GiftGamepass.html" class=" m-0 h6 text-theme text-nowrap"><i class="fa-duotone fa-solid fa-layer-group"></i>&nbsp;&nbsp;บริการกด Gamepass&nbsp;<i class="fa-duotone fa-solid fa-angle-right" style="font-size: small;"></i>&nbsp;</a>
+                    <a id="currentgamepasspage" class="m-0 h6 text-main"><i class="fa-duotone fa-solid fa-bag-shopping"></i>&nbsp;&nbsp;n/a</a>
+                </div>
+                <a class="btn btn-main nav-link m-0 p-0 pt-2 pt-lg-1" onclick="window.history.go(-1)" style="width: 35px; height: 35px; border-radius: 90vh;"><i class="fa-duotone fa-solid fa-chevron-left"></i></a>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-5">
+                    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img id="gamepassimage" src="../../assets/img/cat-meme.gif" class="img-fluid d-block w-100" style="border-radius: 15px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 m-0 me-5 mt-3 mt-lg-0">
+                    <h3 id="gamepassname" class="text-theme m-0">n/a</h3>
+                    <h4 class="text-main m-0">
+                        <span id="price" data-price="1">n/a฿</span> ต่อชิ้น
+                        <span class="discount" id="coupon-tag" hidden></span>
+                    </h4>
+                    <p id="gamepassremaining" class="text-theme m-0 mt-2">มีสินค้าทั้งหมด n/a ชิ้น</p>
+                    <h6 class="text-theme mt-5"><i class="fa-duotone fa-solid fa-circle-info"></i>&nbsp;&nbsp;รายละเอียดสินค้า</h6>
+                    <div class="border-hov px-3 py-2" style="border-radius: 10px; border: 1px solid #ccc;">
+                        <div id="gamepassdetails" class="text-theme long-text-read-more" style="word-wrap: break-word; white-space: pre-wrap; min-height: 50px;">n/a</div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-center text-theme m-0">จำนวนสินค้า</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="input-number-button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">&ndash;</button>
+                                    <input id="buy_count" class="input-number-input mx-2" type="number" min="1" max="1844" value="1" placeholder="1-1844" onKeyDown="if(this.value.length==3 && event.keyCode!=8) return false;">
+                                    <button class="input-number-button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                        <button class="col-12 col-lg-8 btn btn-main nav-link" id="shop-buy" data-stock="1844" style="background-color: var(--color-button);"><i class="fa-duotone fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;สั่งซื้อ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light border shadow mt-5 py-5 px-5" style="border-radius: 10px;">
+            <h5 class="text-theme"><i class="fa-duotone fa-solid fa-ballot"></i>&nbsp;&nbsp;ข้อมูลของสินค้า</h5>
+            <div class="border-hov px-3 py-2" style="border-radius: 10px; border: 1px solid #ccc;">
+                <p id="footerdata_productname" class="text-theme my-0">ชื่อสินค้า :&nbsp;n/a</p>
+                <p id="footerdata_remaining" class="text-theme my-0">จำนวนคงเหลือ :&nbsp;n/a ชิ้น</p>
+                <p id="footerdata_selled" class="text-theme my-0">ยอดขาย :&nbsp;n/a ชิ้น</p>
+            </div>
+            <h5 class="text-danger mt-4"><i class="fa-duotone fa-solid fa-triangle-exclamation"></i>&nbsp;&nbsp;หมายเหตุ</h5>
+            <div class="border-hov px-3 py-2" style="border-radius: 10px; border: 1px solid #ccc;">
+                <div class="text-danger" style="word-wrap: break-word; white-space: pre-wrap; min-height: 50px;"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="custom_backdrop" class="modal-backdrop show" hidden></div>
+    <style>
+        .hidden-input-auto-fill {
+            opacity: 0 !important;
+            width: 0px !important;
+            height: 0px !important;
+            z-index: 0 !important;
+        }
+    </style>
+    <input type="text" class="hidden-input-auto-fill">
+    <footer class="footer shadow">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-4 text-center mb-3">
+                    <img style="animation: bounce-3 1s infinite" src="../../assets/img/Icon.svg" width="100">
+                    <br>
+                    <h5 class="text-main">&nbsp;</h5>
+                    <h6 class="text-main" style="animation: bounce 1s infinite">จำหนายตัวรันราคาถูก, DLL Injector<br>Imgui Template, Blox Fruit Id<br>Cracked / Leaked Script<br>บริการกด Gamepass</h6>
+                </div>
+                <div class="col-12 col-lg-2 mb-3 justify-content-center">
+                    <h5 class="text-main">เมนูหลัก</h5>
+                    <div class="text-left mb-2">
+                        <a href="./index.html" style="text-decoration: none; font-size: 13px;" class="text-main"><i class="fa-duotone fa-solid fa-house text-main icon-white"></i>&nbsp;หน้าหลัก</a>
+                    </div>
+                    <div class="text-left mb-2">
+                        <a href="./Category.html" style="text-decoration: none; font-size: 13px;" class="text-main"><i class="fa-duotone fa-solid fa-store text-main icon-white"></i>&nbsp;สินค้าทั่วไป</a>
+                    </div>
+                    <div class="text-left mb-2">
+                        <a href="./Category.html" style="text-decoration: none; font-size: 13px;" class="text-main"><i class="fa-duotone fa-solid fa-basket-shopping text-main icon-white"></i>&nbsp;สินค้าออเดอร์</a>
+                    </div>
+                    <div class="text-left mb-2">
+                        <a href="#" style="text-decoration: none; font-size: 13px;" class="text-main"><i class="fa-duotone fa-solid fa-wallet text-main icon-white"></i>&nbsp;เติมเงิน</a>
+                    </div>
+                    <div class="text-left mb-2">
+                        <a href="https://discord.gg/ApNxrnDsAN" style="text-decoration: none; font-size: 13px;" class="text-main"><i class="fa-duotone fa-solid fa-headset text-main icon-white"></i>&nbsp;ติดต่อเรา</a>
+                    </div>
+                </div>
+                <div id="footerhistory" class="col-12 col-lg-2 mb-3 justify-content-center">
+                    <h5 class="text-main">ประวัติต่างๆ</h5>
+                    <div class="text-left mb-2">
+                        <a href="#" style="text-decoration: none; font-size: 13px;" class="text-main"><i class="fa-duotone fa-solid fa-store"></i>&nbsp;&nbsp;ประวัติการซื้อสินค้า</a>
+                    </div>
+                    <div class="text-left mb-2">
+                        <a href="#" style="text-decoration: none; font-size: 13px;" class="text-main"><i class="fa-duotone fa-solid fa-dice"></i>&nbsp;&nbsp;ประวัติการเล่นมินิเกม</a>
+                    </div>
+                    <div class="text-left mb-2">
+                        <a href="#" style="text-decoration: none; font-size: 13px;" class="text-main"><i class="fa-duotone fa-solid fa-wallet"></i>&nbsp;&nbsp;ประวัติการเติมซองอังเปา</a>
+                    </div>
+                    <div class="text-left mb-2">
+                        <a href="#" style="text-decoration: none; font-size: 13px;" class="text-main"><i class="fa-duotone fa-solid fa-piggy-bank"></i>&nbsp;&nbsp;ประวัติการเติมเงินธนาคาร</a>
+                    </div>
+                    <div class="text-left mb-2">
+                        <a href="#" style="text-decoration: none; font-size: 13px;" class="text-main"><i class="fa-duotone fa-solid fa-gift"></i>&nbsp;&nbsp;ประวัติการเติมโค้ด</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-center mb-3">
+                    <center>
+                        <iframe src="https://discord.com/widget?id=1016359885912428636&theme=dark" width="350" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    </center>
+                </div>
+            </div>
+            <center style="font-size: 14px;">
+                <p class="m-0 mb-1 text-main"><strong class="text-main"><i class="fa-duotone fa-solid fa-copyright text-main"></i>&nbsp; FinalProject By Nakrob Keawphetwong | All Right Reserved</strong></p>
+                <p class="m-0 text-main"><i class="fa-duotone fa-solid fa-cog fa-spin text-main"></i>&nbsp; ไม่มีสมาชิก&nbsp;ในห้องแชท | <a href="https://discord.gg/ApNxrnDsAN" style="text-decoration: none;color: #39b3fe"> แจ้งปัญหาเกี่ยวกับร้านค้า</a></small>
+            </center>
+        </div>
+    </footer>
+    <script src="../../assets/Scripts/FunctionsHandler.js"></script>
+    <script src="../../assets/Scripts/NavigationBarFetchData.js"></script>
+    <script src="../../assets/Scripts/GiftGamepass_product.js"></script>
+</body>
+
+</html>

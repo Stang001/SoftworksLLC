@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Store | Nakrob Keawphetwong</title>
+        <link rel="shortcut icon" href="../../assets/img/cat-meme.gif" type="image/png">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/dataTables.bootstrap4.min.css">
+        <link href="../../css/animate.css" rel="stylesheet">
+        <script src="../../assets/js/sweetalert.min.js"></script>
+        <link href="../../assets/css/hyper.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <style>
+            .swal-modal .swal-text {
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    
+    <body class="bodyss" style="background-color: #191A1C;">
+        
+        <!-- Container Start -->
+        <div class="container" style="padding-top: 110px;">
+            
+      <!-- Game Type -->
+      <div class="table-responsive mt-3 card mt-4 shadow-dark radius-border hyper-bg-white card-body">
+        <h3 class="text-center mt-4 mb-4">--- เกมทั้งหมดในระบบ ---</h3>
+        <center><button class="btn hyper-btn-info my-2 my-sm-0 w-100" type="button" data-toggle="modal" data-target="#addgamemodal"><i class="fal fa-plus-square mr-1"></i> เพิ่มเกมใหม่เข้าระบบ</button></center>
+  
+        <!-- Add Game Modal -->
+        <div class="modal fade" id="addgamemodal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 radius-border-2 hyper-bg-white">
+              <div class="modal-header hyper-bg-dark">
+                <h6 class="modal-title"><i class="fal fa-plus-square mr-1"></i> เพิ่มเกมใหม่เข้าระบบ</h6>
+              </div>
+              <div class="modal-body text-center">
+  
+                  <!-- Card Example -->
+                  <div class="media m-auto">
+                    <img id="gamelogoimgnew" src="../../assets/img/logoani_236x236.jpg" class="align-self-center mr-3 rounded-circle d-none d-md-block" width="70px;">
+                  <div class="media-body text-center text-md-left">
+                    <img id="gamelogoresimgnew" src="../../assets/img/logoani_236x236.jpg" class="ml-auto mr-auto rounded-circle d-block d-md-none" width="70px;">
+                    <h4 class="mt-0 mb-1" id="gamenamenew">GAMENAME</h4>
+                    <font class="text-muted">แนะนำขนาด 120 x 120 Pixel</font>
+                  </div>
+                </div>
+                <!-- End Card Example -->
+  
+                <form id="addnewgame" enctype="multipart/form-data">
+  
+                  <div class="input-group mb-2 mt-4">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text hyper-bg-dark border-dark"><i class="fal fa-gamepad-alt"></i></span>
+                    </div>
+                    <input id="nametxtgamenew" name="nametxtgamenew" onkeyup="NewgameTXTprev()" maxlength="32" type="text" class="form-control form-control-sm hyper-form-control" placeholder="ชื่อเกมที่ต้องการเพิ่ม" required autocomplete="off">
+                  </div>
+                  <div class="input-group mb-2 mt-4">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text hyper-bg-dark border-dark"><i class="fas fa-globe-asia"></i></span>
+                    </div>
+                    <input id="placeIdInput" type="text" class="form-control form-control-sm hyper-form-control" placeholder="ใส่ Place ID ของเกม" required autocomplete="off">
+                  </div>
+                </form>
+  
+              </div>
+              <div class="modal-footer p-2 border-0">
+                <button type="button" id="addgamesubmit" class="btn hyper-btn-notoutline-success"><i class="fal fa-plus-square mr-1"></i>เพิ่มเกม</button>
+                <button type="button" class="btn hyper-btn-notoutline-danger" data-dismiss="modal"><i class="fad fa-times-circle mr-1"></i>ยกเลิก</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Add Game Modal -->
+  
+        <!-- Card -->
+        <div id="gameList" class="row no-gutters mt-3">
+          <h4 class="text-center w-100 mt-4">ไม่มีข้อมูลในขณะนี้</h4>
+        </div>
+        <!-- End Card -->
+        </div>
+        
+        <!-- Footer -->
+        <small class="pb-3 d-block my-auto footer-copyright text-secondary text-center py-4 w-100">FinalProject | By <a href="https://www.facebook.com/nakrob.keawphetwong" target="_blank">Nakrob Keawphetwong</a></small>
+        <!-- End Footer -->
+        
+        <script src="../../assets/Scripts/FunctionsHandler.js"></script>
+        <script src="../../assets/plugins/GameEditUnit.js"></script>
+    </body>
+    
+</html>
