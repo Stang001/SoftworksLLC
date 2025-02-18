@@ -1,0 +1,71 @@
+<tr id="Datarow" role="row" data-name="${user.name}" class="odd">
+  <td class="sorting_1">${user.id}</td>
+  <td>${user.name}</td>
+  <td>${user.name}</td>
+  <td>
+      <button class="btn btn-sm hyper-btn-notoutline-success" type="button" data-toggle="modal" data-target="#editdatamodal${user.id}">
+          <i class="fal fa-edit mr-1"></i> แก้ไข
+      </button>
+      <button onclick="DelData(${user.id})" value="${user.id}" class="btn btn-sm hyper-btn-notoutline-danger my-1 my-sm-0" type="button">
+          <i class="fal fa-trash-alt mr-1"></i> ลบ
+      </button>
+
+      <!-- Edit Game Data Modal -->
+      <div class="modal fade" id="editdatamodal${user.id}" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content border-0 radius-border-2 hyper-bg-white">
+                  <div class="modal-header hyper-bg-dark">
+                      <h6 class="modal-title">
+                          <i class="fal fa-plus-square mr-1"></i> แก้ไขข้อมูล
+                      </h6>
+                  </div>
+                  <div class="modal-body text-center">
+                      <form method="POST" enctype="multipart/form-data">
+                          <div class="input-group input-group-sm mb-3 mt-4">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text hyper-bg-dark border-dark">ชื่อผู้ใช้งาน</span>
+                              </div>
+                              <input id="name${user.id}" type="text" value="${user.name}" class="form-control form-control-sm hyper-form-control" placeholder="ชื่อผู้ใช้งาน" required="" autocomplete="off">
+                          </div>
+
+                          <div class="input-group input-group-sm mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text hyper-bg-dark border-dark">รหัสผ่าน</span>
+                              </div>
+                              <input id="price${user.id}" type="text" value="${user.price}" class="form-control form-control-sm hyper-form-control" placeholder="รหัสผ่าน" required="" autocomplete="off">
+                          </div>
+
+                          <div class="input-group input-group-sm mb-3">
+                              <div class="input-group-prepend">
+                                  <label class="input-group-text hyper-bg-dark border-dark" for="inputGroupSelect01">เลือกการ์ด</label>
+                              </div>
+                              <select class="custom-select hyper-form-control" id="card${user.id}">
+                                  <option selected="" value="1">${cardtitle}</option>
+                              </select>
+                          </div>
+
+                          <div class="input-group input-group-sm">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text hyper-bg-dark border-dark">รายละเอียด</span>
+                              </div>
+                              <textarea id="detail${user.id}" class="form-control form-control-sm hyper-form-control" style="height: 100px;min-height: 100px;max-height: 100px;">${user.detail}</textarea>
+                          </div>
+
+                          <input type="hidden" id="gameid${user.id}" value="${user.id}">
+
+                        
+                      </form>
+                  </div>
+                  <div class="modal-footer p-2 border-0">
+                      <button type="button" id="updatedata${user.id}" onclick="updatedata(${user.id})" class="btn hyper-btn-notoutline-success">
+                          <i class="fal fa-plus-square mr-1"></i>อัพเดทข้อมูล
+                      </button>
+                      <button type="button" class="btn hyper-btn-notoutline-danger" data-dismiss="modal">
+                          <i class="fad fa-times-circle mr-1"></i>ยกเลิก
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </td>
+</tr>`;

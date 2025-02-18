@@ -1,0 +1,321 @@
+/* Hyperstudio class*/
+.shadow-dark { box-shadow:0px 6px 12px rgba(46, 56, 77, 0.3); }
+.radius-border {border-radius: 1rem !important;}
+.radius-border-6 {border-radius: 0.6rem !important;}
+.radius-border-2 {border-radius: 0.2rem !important;}
+
+.hyper-bg-white{background-color: #FFFFFF !important;color:#2E384D;}
+.hyper-bg-dark{background-color: #2E384D !important;color:#fff;}
+
+.hyper-btn-perple {
+  font-family: 'Kanit';
+  transition: all 0.25s;
+  color: #6E00B3;
+  border: 1.5px solid #6E00B3;
+  font-weight: lighter;
+}
+
+.hyper-btn-perple:hover {
+  transition: all 0.25s;
+  color: #fff;
+  background-color: #6E00B3;
+  box-shadow: 0 10px 12px 0 rgba(110, 0, 179, 0.2), 0 6px 12px 0 rgba(110, 0, 179, 0.19);
+}
+
+.hyper-btn-perple-active {
+font-family: 'Kanit';
+transition: all 0.25s;
+color: #fff !important;
+background-color: #6E00B3;
+box-shadow: 0 10px 12px 0 rgba(110, 0, 179, 0.2), 0 6px 12px 0 rgba(110, 0, 179, 0.19);
+}
+
+.hyper-btn-dark {
+  font-family: 'Kanit';
+  transition: all 0.25s;
+  color: #2E384D;
+  border: 1.5px solid #2E384D;
+  font-weight: lighter;
+}
+
+.hyper-btn-dark:hover {
+  transition: all 0.25s;
+  color: #fff;
+  background-color: #2E384D;
+  box-shadow: 0 10px 12px 0 rgba(46, 56, 77, 0.2), 0 6px 12px 0 rgba(46, 56, 77, 0.19);
+}
+
+.hyper-btn-dark-active {
+font-family: 'Kanit';
+transition: all 0.25s;
+color: #fff !important;
+background-color: #2E384D;
+box-shadow: 0 10px 12px 0 rgba(46, 56, 77, 0.2), 0 6px 12px 0 rgba(46, 56, 77, 0.19);
+}
+
+.hyper-btn-success {
+    font-family: 'Kanit';
+    transition: all 0.25s;
+    color: #58b368;
+    border: 1.5px solid #58b368;
+    font-weight: lighter;
+  }
+  
+.hyper-btn-success:hover {
+    transition: all 0.25s;
+    color: #fff;
+    background-color: #58b368;
+    box-shadow: 0 10px 12px 0 rgba(88,179,104, 0.2), 0 6px 12px 0 rgba(88,179,104, 0.19);
+}
+
+.hyper-btn-success-active {
+  font-family: 'Kanit';
+  transition: all 0.25s;
+  color: #fff !important;
+  background-color: #58b368;
+  box-shadow: 0 10px 12px 0 rgba(88,179,104, 0.2), 0 6px 12px 0 rgba(88,179,104, 0.19);
+}
+
+.hyper-btn-orange {
+    font-family: 'Kanit';
+    transition: all 0.25s;
+    color: #ff9400;
+    border: 1.5px solid #ff9400;
+    font-weight: lighter;
+  }
+  
+.hyper-btn-orange:hover {
+    transition: all 0.25s;
+    color: #fff;
+    background-color: #ff9400;
+    box-shadow: 0 10px 12px 0 rgba(255,148,0, 0.2), 0 6px 12px 0 rgba(255,148,0, 0.19);
+}
+
+.hyper-btn-orange-active {
+  font-family: 'Kanit';
+  transition: all 0.25s;
+  color: #fff !important;
+  background-color: #ff9400;
+  box-shadow: 0 10px 12px 0 rgba(255,148,0, 0.2), 0 6px 12px 0 rgba(255,148,0, 0.19);
+}
+
+.hyper-btn-primary {
+    font-family: 'Kanit';
+    transition: all 0.25s;
+    color: #0049b3;
+    border: 1.5px solid #0049b3;
+    font-weight: lighter;
+  }
+  
+.hyper-btn-primary:hover {
+    transition: all 0.25s;
+    color: #fff;
+    background-color: #0049b3;
+    box-shadow: 0 10px 12px 0 rgba(0,73,179, 0.2), 0 6px 12px 0 rgba(0,73,179, 0.19);
+}
+
+.hyper-btn-primary-active {
+  font-family: 'Kanit';
+  transition: all 0.25s;
+  color: #fff !important;
+  background-color: #0049b3;
+  box-shadow: 0 10px 12px 0 rgba(0,73,179, 0.2), 0 6px 12px 0 rgba(0,73,179, 0.19);
+}
+
+
+.hyper-btn-danger {
+  font-family: 'Kanit';
+  transition: all 0.25s;
+  color: #ff0039 !important;
+  border: 1.5px solid #ff0039 !important;
+  font-weight: lighter;
+}
+
+.hyper-btn-danger:hover {
+  transition: all 0.25s;
+  color: #fff !important;
+  background-color: #ff0039 !important;
+  box-shadow: 0 10px 12px 0 rgba(255,0,57, 0.2), 0 6px 12px 0 rgba(255,0,57, 0.19);
+}
+
+.hyper-btn-danger-active {
+  font-family: 'Kanit';
+  transition: all 0.25s;
+  color: #fff !important;
+  background-color: #ff0039 !important;
+  box-shadow: 0 10px 12px 0 rgba(255,0,57, 0.2), 0 6px 12px 0 rgba(255,0,57, 0.19);
+}
+
+.hyper-btn-pink {
+  font-family: 'Kanit';
+  transition: all 0.25s;
+  color: #f5487f;
+  border: 1.5px solid #f5487f;
+  font-weight: lighter;
+}
+
+.hyper-btn-pink:hover {
+  transition: all 0.25s;
+  color: #fff;
+  background-color: #f5487f;
+  box-shadow: 0 10px 12px 0 rgba(245,72,127, 0.2), 0 6px 12px 0 rgba(245,72,127, 0.19);
+}
+
+.hyper-btn-pink-active {
+  font-family: 'Kanit';
+  transition: all 0.25s;
+  color: #fff !important;
+  background-color: #f5487f;
+  box-shadow: 0 10px 12px 0 rgba(245,72,127, 0.2), 0 6px 12px 0 rgba(245,72,127, 0.19);
+}
+
+.hyper-btn-buy {
+  font-family: 'Kanit';
+  transition: all 0.25s;
+  color: #fff;
+  background-color: #58b368;
+  font-weight: lighter;
+}
+
+.hyper-btn-buy:hover {
+  transition: all 0.25s;
+  color: #fff;
+  background-color: #4B9959;
+  box-shadow: 0 10px 12px 0 rgba(88,179,104, 0.2), 0 6px 12px 0 rgba(88,179,104, 0.19);
+}
+
+.hyper-btn-info {
+  font-family: 'Kanit';
+  transition: all 0.25s;
+  color: #fff;
+  background-color: #2E384D;
+  font-weight: lighter;
+}
+
+.hyper-btn-info:hover {
+  transition: all 0.25s;
+  color: #fff;
+  background-color: #232B3B;
+  box-shadow: 0 10px 12px 0 rgba(46, 56, 77, 0.2), 0 6px 12px 0 rgba(46, 56, 77, 0.19);
+}
+
+.hyper-btn-notoutline-danger {
+  font-family: 'Kanit';
+  transition: all 0.25s;
+  color: #fff !important;
+  border: 1.5px solid #ff0039 !important;
+  background-color: #ff0039 !important;
+  font-weight: lighter;
+}
+
+.hyper-btn-notoutline-danger:hover {
+  transition: all 0.25s;
+  color: #fff !important;
+  background-color: #DE0030 !important;
+  box-shadow: 0 10px 12px 0 rgba(255,0,57, 0.2), 0 6px 12px 0 rgba(255,0,57, 0.19);
+}
+
+.hyper-btn-notoutline-danger:focus {
+  transition: all 0.25s;
+  color: #fff !important;
+  background-color: #DE0030 !important;
+  box-shadow: 0 10px 12px 0 rgba(255,0,57, 0.2), 0 6px 12px 0 rgba(255,0,57, 0.19);
+}
+
+.hyper-btn-notoutline-success {
+  font-family: 'Kanit';
+  transition: all 0.25s;
+  color: #fff;
+  border: 1.5px solid #36A558;
+  background-color: #36A558;
+  font-weight: lighter;
+}
+
+.hyper-btn-notoutline-success:hover {
+  transition: all 0.25s;
+  color: #fff;
+  background-color: #31944F;
+  box-shadow: 0 10px 12px 0 rgba(88,179,104, 0.2), 0 6px 12px 0 rgba(88,179,104, 0.19);
+}
+
+.hyper-btn-notoutline-success:not([disabled]):hover {
+  transition: all 0.25s;
+  color: #fff;
+  background-color: #31944F !important;
+  box-shadow: 0 10px 12px 0 rgba(88,179,104, 0.2), 0 6px 12px 0 rgba(88,179,104, 0.19);
+}
+
+.hyper-card{transition: all 0.25s; border:3px solid rgba(0, 0, 0, 0);}
+.hyper-card:hover{ border:3px solid #2E384D;}
+
+
+.hyper-form-control{
+  font-family: Kanit;
+  color: #2E384D;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1.5px solid rgba(46, 56, 77, 0.3);
+}
+
+.hyper-form-control:focus{
+  color: #2E384D;
+  background-color: #fff;
+  border: 1.5px solid rgba(46, 56, 77, 1);
+  outline: 0;
+  box-shadow: 0 0 0 1.5px rgba(0,73,179, 0);
+}
+
+.hyper-form-control:disabled{
+  font-family: Kanit;
+  color: #2E384D;
+  background-color: #20293C;
+  background-clip: padding-box;
+  border: 1px solid #3D4C6A;
+}
+
+/* Bootstrap edit class*/
+body {font-family: 'Kanit' !important;}
+.navbar-light{ box-shadow:0px 10px 20px rgba(0, 0, 0, 0.2); }
+.btn {border-radius: 0.2rem;}
+a {text-decoration: none !important; color: #4087DE;}
+a:hover {text-decoration: none !important; color: #0049b3;}
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #2E384D;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.page-link:hover {
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+  background-color: #2E384D;
+  border-color: #2E384D;
+}
+
+.page-link:focus {
+  z-index: 3;
+  outline: 0;
+  color:#fff;
+  background-color: #2E384D;
+  box-shadow: 0 0 0 0.0rem rgba(0, 123, 255, 0.25);
+  border-color: #2E384D;
+}
+
+.page-link.active {
+  z-index: 3;
+  outline: 0;
+  color:#fff;
+  background-color: #2E384D;
+  box-shadow: 0 0 0 0.0rem rgba(0, 123, 255, 0.25);
+  border-color: #2E384D;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: initial;
+}

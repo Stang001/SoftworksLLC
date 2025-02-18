@@ -1,0 +1,23 @@
+.loader {
+    height: 100%;
+    width: 100%;
+    background: var(--color-main);
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.load-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.icon {
+    display: block;
+    max-height: 80px;
+}

@@ -1,0 +1,20 @@
+{
+    "slides": [
+      { "image_name": "1.jpg" },
+      { "image_name": "2.jpg" }
+    ],
+    "game_data": [
+      { "game_id": 1, "game_name": "Roblox", "category": "ID Selling" },
+      { "game_id": 2, "game_name": "Minecraft", "category": "Game Passes" }
+    ],
+    "statistics": {
+      "total_game": 100,
+      "ready_selled": 50,
+      "selled": 30
+    },
+    "promotions": {
+      "discount": 30,
+      "end_date": "2025-02-28"
+    }
+  }
+  
